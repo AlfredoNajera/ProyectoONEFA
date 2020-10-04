@@ -1,0 +1,319 @@
+mysql> source proyectoFinal_equipoN.sql
++---------------+---------------------+-------------------+-------+
+| id_entrenador | apellido_entrenador | nombre_entrenador | cargo |
++---------------+---------------------+-------------------+-------+
+|             3 | Harbaugh            | John              | HC    |
+|            25 | Tomlin              | Mike              | HC    |
+|            30 | Gruden              | Jon               | HC    |
++---------------+---------------------+-------------------+-------+
+3 rows in set (0.00 sec)
+
++------------+--------------------------------+-----------+---------+-----------+-------------------+-----------+---------------+
+| id_estadio | nombre_estadio                 | capacidad | grama   | condicion | anyo_construccion | id_ciudad | nombre_ciudad |
++------------+--------------------------------+-----------+---------+-----------+-------------------+-----------+---------------+
+|          1 | University of Phoenix          |     63000 | Natural | Excelente |              2006 |         1 | Phoenix       |
+|          5 | Bank of America                |     73250 | Natural | Buena     |              1996 |         5 | Charlotte     |
+|          7 | Cleveland Browns Stadium       |     72300 | Natural | Excelente |              1999 |         7 | Cleveland     |
+|          8 | Soldier Field II               |     63000 | Natural | Excelente |              2003 |         8 | Chicago       |
+|         10 | Invesco Field                  |     76125 | Natural | Excelente |              2001 |        10 | Denver        |
+|         12 | Lambeau Field                  |     72515 | Natural | Regular   |              1957 |        12 | Green Bay     |
+|         15 | Jacksonville Municipal Stadium |     67174 | Natural | Buena     |              1995 |        15 | Jacksonville  |
+|         16 | Arrowhead Stadium              |     79409 | Natural | Buena     |              1972 |        16 | Kansas City   |
+|         17 | Dolphin Stadium                |     75000 | Natural | Regular   |              1987 |        17 | Miami         |
+|         22 | McAfee Coliseum                |     63146 | Natural | Regular   |              1966 |        22 | Oakland       |
+|         23 | Lincoln Financial Field        |     68532 | Natural | Excelente |              2003 |        23 | Philadelphia  |
+|         24 | Heinz Field                    |     64450 | Natural | Excelente |              2001 |        24 | Pittsburgh    |
+|         25 | Qualcomm Stadium               |     71500 | Natural | Mala      |              1967 |        25 | San Diego     |
+|         26 | Qwest Field                    |     68000 | Natural | Excelente |              2002 |        26 | Seattle       |
+|         27 | Monster Park                   |     64450 | Natural | Excelente |              2000 |        27 | San Francisco |
+|         29 | Raymond James                  |     65657 | Natural | Excelente |              1998 |        29 | Tampa Bay     |
+|         30 | LP Field                       |     68798 | Natural | Excelente |              1999 |        30 | Nashville     |
+|         31 | FedEx Field                    |     91665 | Natural | Excelente |              1997 |        31 | Wasington     |
+|         34 | Rose Bowl                      |     92542 | Natural | Buena     |              1936 |        34 | Portland      |
+|         55 | Olimpico Universitario         |     68927 | Natural | Excelente |              1967 |        42 | Mexico        |
++------------+--------------------------------+-----------+---------+-----------+-------------------+-----------+---------------+
+20 rows in set (0.00 sec)
+
++----------+----------------+
+| clima    | total_ciudades |
++----------+----------------+
+| Caluroso |             19 |
+| Frio     |             19 |
+| Templado |             22 |
++----------+----------------+
+3 rows in set (0.00 sec)
+
++---------------+-----------+-------------------+---------------------+
+| nombre_equipo | anyo_fund | nombre_entrenador | apellido_entrenador |
++---------------+-----------+-------------------+---------------------+
+| Chicago       |      1920 | Romeo             | Crennel             |
+| Cincinnati    |      1968 | Lovie             | Smith               |
+| Cleveland     |      1946 | Marvin            | Lewis               |
+| Miami         |      1966 | Tony              | Sparano             |
+| Minnesota     |      1961 | Brad              | Childress           |
+| Washington    |      1932 | Jim               | Zorn                |
++---------------+-----------+-------------------+---------------------+
+6 rows in set (0.00 sec)
+
++----------------+------------------+------------------+-------------+---------+
+| nombre_jugador | apellido_jugador | fecha_nacimiento | universidad | carries |
++----------------+------------------+------------------+-------------+---------+
+| Ahmard         | Hall             | 1979-11-13       | Texas       |      80 |
++----------------+------------------+------------------+-------------+---------+
+1 row in set (0.00 sec)
+
++----------------+------------------+
+| nombre_jugador | apellido_jugador |
++----------------+------------------+
+| Brian          | Leonard          |
+| Chad           | Owens            |
+| Chad           | Johnson          |
+| D.J.           | Hackett          |
+| Darian         | Barnes           |
+| David          | Martin           |
+| DeShaun        | Foster           |
+| Joe            | Horn             |
+| Martrez        | Milner           |
+| Michael        | Jenkins          |
+| Michael        | Bennett          |
+| Reggie         | Williams         |
+| Skyler         | Green            |
+| Will           | Heller           |
++----------------+------------------+
+14 rows in set (0.00 sec)
+
++-----------+---------------+---------------+------------------+----------+
+| id_equipo | nombre_equipo | nombre_ciudad | ingreso_promedio | record_p |
++-----------+---------------+---------------+------------------+----------+
+| NYJ       | New York      | New York      |               53 |       12 |
+| OAK       | Oakland       | Oakland       |               55 |       12 |
++-----------+---------------+---------------+------------------+----------+
+2 rows in set (0.00 sec)
+
++----------------+------------------+
+| nombre_jugador | apellido_jugador |
++----------------+------------------+
+| Adimchinobe    | Echemandu        |
+| Chris          | Barclay          |
+| Clifton        | Dawson           |
+| Josh           | Scobey           |
+| Madison        | Hedgecock        |
+| Michael        | Bennett          |
+| Samkon         | Gado             |
++----------------+------------------+
+7 rows in set (0.00 sec)
+
++---------------+
+| nombre_ciudad |
++---------------+
+| New York      |
++---------------+
+1 row in set (0.00 sec)
+
++---------------+------------------+
+| nombre_ciudad | total_receptores |
++---------------+------------------+
+| Atlanta       |               11 |
+| Charlotte     |               10 |
+| Chicago       |               10 |
+| Detroit       |               11 |
+| Minneapolis   |                9 |
+| New Orleans   |                9 |
+| New York      |                9 |
+| Philadelphia  |                9 |
+| Phoenix       |               11 |
+| San Francisco |               14 |
+| Seattle       |               11 |
+| St Louis      |               13 |
+| Tampa Bay     |               12 |
+| Wasington     |               11 |
++---------------+------------------+
+14 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-----------+---------------+-----------------+----------+-------------+----------+----------+----------+-----------+
+| id_equipo | nombre_equipo | nickname_equipo | division | conferencia | record_g | record_p | record_e | anyo_fund |
++-----------+---------------+-----------------+----------+-------------+----------+----------+----------+-----------+
+| DAL       | Dallas        | Vaqueros        | Este     | Nacional    |       13 |        3 |        0 |      1960 |
+| DEN       | Denver        | Broncos         | Oeste    | Americana   |        7 |        9 |        0 |      1960 |
+| DET       | Detroit       | Leones          | Norte    | Nacional    |        7 |        9 |        0 |      1930 |
+| PIT       | Pittsburgh    | Acereros        | Norte    | Americana   |       10 |        6 |        0 |      1933 |
+| TB        | Tampa Bay     | Bucaneros       | Sur      | Nacional    |        9 |        7 |        0 |      1976 |
+| TEN       | Tennessee     | Titanes         | Sur      | Americana   |       10 |        6 |        0 |      1960 |
++-----------+---------------+-----------------+----------+-------------+----------+----------+----------+-----------+
+6 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
++-----------+---------------+-----------------+----------+-------------+----------+----------+----------+-----------+
+| id_equipo | nombre_equipo | nickname_equipo | division | conferencia | record_g | record_p | record_e | anyo_fund |
++-----------+---------------+-----------------+----------+-------------+----------+----------+----------+-----------+
+| ARI       | Arizona       | Cardenales      | Oeste    | Nacional    |        8 |        8 |        0 |      1920 |
+| ATL       | Atlanta       | Halcones negros | Sur      | Nacional    |        4 |       12 |        0 |      1966 |
+| MIA       | Miami         | Delfines        | Este     | Americana   |        1 |       15 |        0 |      1966 |
+| MIN       | Minnesota     | Vikingos        | Norte    | Nacional    |        8 |        8 |        0 |      1961 |
++-----------+---------------+-----------------+----------+-------------+----------+----------+----------+-----------+
+4 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
++-----------+---------------+
+| id_equipo | nombre_equipo |
++-----------+---------------+
+| TB        | Tampa Bay     |
+| SEA       | Seattle       |
+| STL       | San Luis      |
+| PIT       | Pittsburgh    |
+| OAK       | Oakland       |
+| NO        | Nueva Orleans |
+| NYG       | New York      |
+| MIA       | Miami         |
+| KC        | Kansas City   |
+| HOU       | Houston       |
+| DEN       | Denver        |
+| CIN       | Cincinnati    |
+| BUF       | Buffalo       |
+| BAL       | Baltimore     |
+| ATL       | Atlanta       |
++-----------+---------------+
+15 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++-------------------+---------------------+---------------+
+| nombre_entrenador | apellido_entrenador | nombre_equipo |
++-------------------+---------------------+---------------+
+| Bill              | Bellichick          | New England   |
++-------------------+---------------------+---------------+
+1 row in set (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++-------------------+---------------------+---------------+
+| nombre_entrenador | apellido_entrenador | nombre_equipo |
++-------------------+---------------------+---------------+
+| Rod               | Marinelli           | Detroit       |
++-------------------+---------------------+---------------+
+1 row in set (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++-------------------+---------------------+---------------+
+| nombre_entrenador | apellido_entrenador | nombre_equipo |
++-------------------+---------------------+---------------+
+| Marvin            | Lewis               | Cleveland     |
++-------------------+---------------------+---------------+
+1 row in set (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++-------------------+---------------------+---------------+
+| nombre_entrenador | apellido_entrenador | nombre_equipo |
++-------------------+---------------------+---------------+
+| Bill              | Bellichick          | New England   |
++-------------------+---------------------+---------------+
+1 row in set (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++----------+----------+
+| posicion | pancakes |
++----------+----------+
+| OT       |     2504 |
+| OG       |     1320 |
+| C        |     1094 |
+| OL       |      158 |
+| LS       |       60 |
++----------+----------+
+5 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++----------+----------+
+| posicion | pancakes |
++----------+----------+
+| OT       |     4522 |
+| OG       |     2793 |
+| C        |     2426 |
+| OL       |      164 |
+| LS       |       60 |
++----------+----------+
+5 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++----------+----------+
+| posicion | pancakes |
++----------+----------+
+| OT       |     3135 |
+| OG       |     1884 |
+| C        |     1462 |
+| OL       |      158 |
+| LS       |       60 |
++----------+----------+
+5 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+---------------+------------------+
+| id_equipo_v | nombre_equipo | partidos_ganados |
++-------------+---------------+------------------+
+| TB          | Tampa Bay     |               48 |
+| WAS         | Washington    |               44 |
++-------------+---------------+------------------+
+2 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+---------------+------------------+
+| id_equipo_v | nombre_equipo | partidos_ganados |
++-------------+---------------+------------------+
+| ATL         | Atlanta       |               58 |
+| KC          | Kansas City   |               51 |
+| NYJ         | New York      |               53 |
+| OAK         | Oakland       |               37 |
++-------------+---------------+------------------+
+4 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++-------------+---------------+------------------+
+| id_equipo_v | nombre_equipo | partidos_ganados |
++-------------+---------------+------------------+
+| NE          | New England   |               86 |
++-------------+---------------+------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+---------------+------------------+
+| id_equipo_v | nombre_equipo | partidos_ganados |
++-------------+---------------+------------------+
+| DAL         | Dallas        |               62 |
+| GB          | Green Bay     |               70 |
+| IND         | Indianapolis  |               77 |
++-------------+---------------+------------------+
+3 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> 
